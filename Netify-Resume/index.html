@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Nisha Yadav | Front-end Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #181a20;
+      --card: #23262f;
+      --accent: #00c6a7; /* Change this for a different accent color */
+      --text: #f1f1f1;
+      --muted: #b0b3b8;
+      --border: #2c2f36;
+      --highlight: #262a34;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .name {
+      font-size: 2.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--accent);
+    }
+    .role {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .contact {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact a:hover { color: #fff; }
+    section {
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    .about-list li {
+      margin-bottom: 10px;
+      color: var(--text);
+      background: var(--highlight);
+      padding: 10px 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .skills-list li {
+      background: #1a1d23;
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-size: 0.98rem;
+      border: 1px solid var(--border);
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+    .skills-list li:hover {
+      background: var(--accent);
+      color: #181a20;
+    }
+    /* Table Styles */
+    .table-section {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 32px;
+    }
+    .dark-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      color: var(--text);
+      margin-bottom: 0;
+    }
+    .dark-table th, .dark-table td {
+      border: 1px solid var(--border);
+      padding: 12px 10px;
+      text-align: left;
+      font-size: 1rem;
+      vertical-align: top;
+    }
+    .dark-table th {
+      background: var(--highlight);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .dark-table tr:nth-child(even) {
+      background: #22242b;
+    }
+    .dark-table tr:hover td {
+      background: #23262f;
+    }
+    .dark-table ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .repo-link {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .repo-link:hover { text-decoration: underline; }
+    @media (max-width: 700px) {
+      .container { padding: 10px; }
+      header { padding-bottom: 14px; }
+      .name { font-size: 2rem; }
+      .contact { flex-direction: column; gap: 6px; }
+      .skills-list { gap: 6px; }
+      .dark-table th, .dark-table td { font-size: 0.95rem; padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="name">NISHA YADAV</div>
+      <div class="role">Software Engineer (Front-end Developer)</div>
+      <div class="contact">
+        <span>📞 +91-810384798375</span>
+        <span>✉️ <a href="mailto:nishyadav1703@gmail.com">nishyadav1703@gmail.com</a></span>
+        <span>📍 Noida, Sector 61</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/nisha-yadav-1703" target="_blank">@nisha-yadav</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <ul class="about-list">
+        <li>Front-End Developer with 3.5+ years of experience in building responsive, high-performance web applications.</li>
+        <li>Expert in creating modules and implementing features with a focus on UI/UX and functionality.</li>
+        <li>Proficient in Agile environments, unit testing, and CI/CD pipelines.</li>
+        <li>Strong communication and collaboration skills with cross-functional teams.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>VueJs</li>
+        <li>Angular</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind CSS</li>
+        <li>Bootstrap</li>
+        <li>Kendo UI</li>
+        <li>Jenkins</li>
+        <li>GitHub</li>
+        <li>GitLab</li>
+        <li>Rally</li>
+        <li>Azure DevOps</li>
+        <li>Swagger</li>
+      </ul>
+    </section>
+
+    <section class="table-section">
+      <h2>Experience</h2>
+      <table class="dark-table">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Company</th>
+            <th>Duration</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Software Engineer (Front-end Developer)</td>
+            <td>Genpact</td>
+            <td>Jun 2022 - Present</td>
+            <td>
+              <ul>
+                <li>Developed and enhanced modules using Angular, JavaScript, HTML, CSS, and Bootstrap.</li>
+                <li>Implemented UI features: mat-select, mat-table, mat-card, mat-paginator, mat-dialog, question matrix.</li>
+                <li>Worked on bug fixing, unit testing (Karma, Jasmine), and dynamic data binding.</li>
+                <li>Collaborated in Agile teams and handled Jenkins deployments.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Software Engineer (Front-end Developer)</td>
+            <td>R System</td>
+            <td>Feb 2020 - Feb 2022</td>
+            <td>
+              <ul>
+                <li>Built modules for US-MED EQUIP | Smarts 2.0 using VueJs, JavaScript, HTML, CSS, Bootstrap, Kendo UI.</li>
+                <li>Created features like Column Chooser, Favourite, Rich Text Format, Inventory Action with Barcode.</li>
+                <li>Worked with Azure DevOps and Swagger for API integration and task management.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>Projects</h2>
+      <table class="dark-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aero Alliance | Aero JV Shop Tool (Routerscope)</td>
+            <td>Implemented modules with UI changes, popups, bug fixes, unit testing, dynamic features, and question matrix.</td>
+            <td>Angular, JavaScript, HTML, CSS, Bootstrap</td>
+          </tr>
+          <tr>
+            <td>ELITE | Engine Lifecycle Information Tracking for Evaluation</td>
+            <td>Developed drag-drop, filter search, modal dialogs, tracking reports, and Fleet Intelligence modules.</td>
+            <td>Angular, JavaScript, HTML, CSS, Bootstrap</td>
+          </tr>
+          <tr>
+            <td>PRISM+ (Managing CS Risk today)</td>
+            <td>Created modules with multi-select, highcharts, ngx-datatable, search, export to Excel, and executive dashboards.</td>
+            <td>Angular, JavaScript, HTML, CSS, Bootstrap</td>
+          </tr>
+          <tr>
+            <td>US-MED EQUIP | Smarts 2.0</td>
+            <td>Built modules and features like Column Chooser, Favourite, Rich Text Format, Inventory Action with Barcode.</td>
+            <td>VueJs, JavaScript, HTML, CSS, Bootstrap, Kendo UI, Azure DevOps, Swagger</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>Repositories</h2>
+      <table class="dark-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Link</th>
+            <th>Skills/Tech</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Open Retro</td>
+            <td><a class="repo-link" href="https://github.com/lazyraven/open-retro-react" target="_blank">github.com/lazyraven/open-retro-react</a></td>
+            <td>ReactJs, Tailwind CSS, Firebase, Firestore, Jspdf</td>
+          </tr>
+          <tr>
+            <td>Just-Vegan-VueJs2</td>
+            <td><a class="repo-link" href="https://gitlab.com/lazyraven/just-vegan-vue3" target="_blank">gitlab.com/lazyraven/just-vegan-vue3</a></td>
+            <td>VueJs, Bootstrap, Axios, Sass</td>
+          </tr>
+          <tr>
+            <td>Just-Vegan-Angular12</td>
+            <td><a class="repo-link" href="https://gitlab.com/lazyraven/just-vegan-angular" target="_blank">gitlab.com/lazyraven/just-vegan-angular</a></td>
+            <td>Angular, TailwindCss</td>
+          </tr>
+          <tr>
+            <td>Angular-Stuff-Practice</td>
+            <td><a class="repo-link" href="https://gitlab.com/lazyraven/angular-project" target="_blank">gitlab.com/lazyraven/angular-project</a></td>
+            <td>Angular, Typescript, Bootstrap</td>
+          </tr>
+          <tr>
+            <td>Nisha Portfolio</td>
+            <td><a class="repo-link" href="https://github.com/lazyraven/nisha-portfolio" target="_blank">github.com/lazyraven/nisha-portfolio</a></td>
+            <td>Vite-Vue, Tailwind CSS, Composition Api, Typescript</td>
+          </tr>
+          <tr>
+            <td>Krishify UI Assignment</td>
+            <td><a class="repo-link" href="https://github.com/lazyraven/krishify_ui_assignment" target="_blank">github.com/lazyraven/krishify_ui_assignment</a></td>
+            <td>Vue3, Tailwind CSS</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>Education</h2>
+      <table class="dark-table">
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Year</th>
+            <th>Institute</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech</td>
+            <td>2015 - 2019</td>
+            <td>Rajasthan Technical University (RTU), Kota, Rajasthan</td>
+            <td>63%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script>
+    // Highlight skill on hover (for fun)
+    document.querySelectorAll('.skills-list li').forEach(li => {
+      li.addEventListener('mouseenter', () => {
+        li.style.background = 'var(--accent)';
+        li.style.color = '#181a20';
+      });
+      li.addEventListener('mouseleave', () => {
+        li.style.background = '#1a1d23';
+        li.style.color = 'var(--accent)';
+      });
+    });
+  </script>
+</body>
+</html>

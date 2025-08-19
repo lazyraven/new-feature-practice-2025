@@ -1,0 +1,263 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Nisha Yadav | Front-end Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #181a20;
+      --card: #23262f;
+      --accent: #00c6a7;
+      --text: #f1f1f1;
+      --muted: #b0b3b8;
+      --border: #2c2f36;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .name {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--accent);
+    }
+    .role {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .contact {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact a:hover { color: #fff; }
+    section {
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    .about {
+      font-size: 1.08rem;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .skills-list, .exp-list, .proj-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills-list li {
+      background: #1a1d23;
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 16px;
+      font-size: 0.98rem;
+      border: 1px solid var(--border);
+    }
+    .exp-list li, .proj-list li {
+      background: #20232a;
+      margin-bottom: 18px;
+      padding: 18px 18px 10px 18px;
+      border-radius: 12px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .exp-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.08rem;
+    }
+    .exp-company {
+      color: var(--accent);
+      font-size: 1.01rem;
+      margin-left: 6px;
+    }
+    .exp-date {
+      float: right;
+      color: var(--muted);
+      font-size: 0.97rem;
+      font-weight: 400;
+    }
+    .exp-desc, .proj-desc {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 0.99rem;
+    }
+    .proj-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.07rem;
+    }
+    .proj-skills {
+      color: var(--accent);
+      font-size: 0.97rem;
+      margin-top: 4px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 10px; }
+      header { padding-bottom: 14px; }
+      .name { font-size: 2rem; }
+      .contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="name">NISHA YADAV</div>
+      <div class="role">Front-end Developer | Full Stack Enthusiast</div>
+      <div class="contact">
+        <span>📞 +91 65456456747</span>
+        <span>✉️ <a href="mailto:nishayadav1703@gmail.com">nishayadav1703@gmail.com</a></span>
+        <span>📍 Noida, India</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/nisha-yadav-1703" target="_blank">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <div class="about">
+        Front-end developer with 5+ years of experience building responsive, high-performance web applications using Angular, Vue.js, JavaScript, HTML, and CSS. Proven expertise in creating dashboards, optimizing UI/UX, and writing unit tests (Jasmine, Karma). Experienced with Agile methodologies, Jenkins, and version control (GitLab, Rally). Key contributor to projects such as Prism+, Aero Alliance, and ARMS-Aero Store.<br>
+        <br>
+        <strong>Additionally:</strong> Foundational knowledge of Node.js and MongoDB.
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Angular</li>
+        <li>Vue.js</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Kendo UI</li>
+        <li>Jasmine</li>
+        <li>Karma</li>
+        <li>Jenkins</li>
+        <li>GitLab</li>
+        <li>Rally</li>
+        <li>Azure DevOps</li>
+        <li>Swagger</li>
+        <li>Node.js (basic)</li>
+        <li>MongoDB (basic)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul class="exp-list">
+        <li>
+          <span class="exp-title">Software Engineer (Front-end Developer)</span>
+          <span class="exp-company">@ Genpact</span>
+          <span class="exp-date">Jun 2022 - Present</span>
+          <div class="exp-desc">
+            Worked as a frontend developer with Angular, JavaScript, and testing frameworks (Karma, Jasmine). Experience with Jenkins for deployment, Node.js and MongoDB. Agile development, code reviews, and client collaboration.
+          </div>
+        </li>
+        <li>
+          <span class="exp-title">Software Engineer (Front-end Developer)</span>
+          <span class="exp-company">@ R Systems International</span>
+          <span class="exp-date">Feb 2020 - Mar 2022</span>
+          <div class="exp-desc">
+            Built modules like Service Test Manager and Inventory Action, delivering high-quality code through rigorous QA. Used Rally, Azure DevOps, and Kendo UI. Collaborated with cross-functional teams and clients.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul class="proj-list">
+        <li>
+          <span class="proj-title">Aero Alliance | Aero JV Shop Tool, ARMS | Aero Store</span>
+          <div class="proj-desc">
+            Worked on ARMS & Aero Store applications (Smartshop, ACT, Techpub, EFR). Focused on enhancements, bug fixes, and close client collaboration.
+          </div>
+          <div class="proj-skills">Angular, JavaScript, Bootstrap, HTML, CSS, Java, Node.js</div>
+        </li>
+        <li>
+          <span class="proj-title">Aero Alliance | Aero JV Shop Tool, Routerscope</span>
+          <div class="proj-desc">
+            Implemented UI modules using Angular Material (mat-select, mat-table, mat-card, mat-paginator, mat-dialog), bug fixes, unit testing, and dynamic features like question matrix.
+          </div>
+          <div class="proj-skills">Angular, JavaScript, HTML, CSS, Bootstrap, Karma, Jasmine</div>
+        </li>
+        <li>
+          <span class="proj-title">ELITE | Engine Lifecycle Information Tracking for Evaluation</span>
+          <div class="proj-desc">
+            Developed modules with drag-drop, filter search, modal dialogs, and tracking reports. Enhanced Fleet Intelligence features.
+          </div>
+          <div class="proj-skills">Angular, JavaScript, Bootstrap, HTML, CSS, Java</div>
+        </li>
+        <li>
+          <span class="proj-title">PRISM+ (Managing CS Risk today)</span>
+          <div class="proj-desc">
+            Created modules with multi-select, high-charts, NGX-data table, search, export to Excel, and executive dashboards.
+          </div>
+          <div class="proj-skills">Angular, JavaScript, Bootstrap, HTML, CSS, Java</div>
+        </li>
+        <li>
+          <span class="proj-title">Smart 2.0 | USMed Equip, Link</span>
+          <div class="proj-desc">
+            Developed and maintained modules for USMed Equip, focusing on UI/UX and performance.
+          </div>
+          <div class="proj-skills">Vue.js, JavaScript, HTML, CSS, Kendo UI, Azure DevOps, Swagger</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script>
+    // Optional: Add a little interactivity (e.g., highlight skills on hover)
+    document.querySelectorAll('.skills-list li').forEach(li => {
+      li.addEventListener('mouseenter', () => li.style.background = '#00c6a7');
+      li.addEventListener('mouseleave', () => li.style.background = '#1a1d23');
+    });
+  </script>
+</body>
+</html>
